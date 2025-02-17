@@ -1,0 +1,39 @@
+Syntax Keywords (upper case)
+DATA STEP
+FMTLIB
+FORMAT
+JOIN
+MACRO
+MERGE
+PROC CATALOG
+PROC DATASETS
+PROC EXPORT
+PROC FORMAT
+PROC FREQ
+PROC HTTP
+PROC IMPORT
+PROC MEANS
+PROC PRINT
+PROC SORT
+PROC TRANSPOSE
+PROC UNIVARIATE
+
+
+Topic Keywords (lower case)
+aggregate
+csv
+custom format
+delimited data
+Excel
+frequency
+graph
+import data
+plot
+read data
+report
+debug
+remove duplicates
+
+
+
+

@@ -1,0 +1,1 @@
+[Click to open PROC IMPORT documentation](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=n1qn5sclnu2l9dn1w61ifw8wqhts.htm)

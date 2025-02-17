@@ -1,0 +1,1 @@
+[Click to open PROC SQL documentation](https://documentation.sas.com/?docsetId=sqlproc&docsetVersion=1.0&docsetTarget=n1oihmdy7om5rmn1aorxui3kxizl.htm)
