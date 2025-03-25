@@ -10,7 +10,7 @@ This simply permits the project maintainers to use and redistribute your contrib
 
 ## Requirements for Sample Program Contributions
 
-* Each program must include the [standard comment block](https://gitlab.sas.com/stever/tmp-sas-code-examples/-/blob/main/comment-template.txt) at the top of the program. The comment includes the following information:
+* Each program must include the [standard comment block](comment-template.txt) at the top of the program. The comment includes the following information:
   - **TITLE**: Brief program description in ALL CAPS
   - **Description**: Detailed explanation of the objective of the program
   - **Keywords**: comma-delimited keywords from [KEYWORDS.txt](KEYWORDS.txt)   
