@@ -4,7 +4,7 @@
          SASHELP.CARS table.                                                                 
      Keywords: PROC FREQ, frequency, aggregate                                               
      SAS Versions: SAS 9, SAS Viya                                                            
-     Documentation:  https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=procstat&docsetTarget=procstat_freq_toc.htm                                                            */
+     Documentation:  https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=procstat&docsetTarget=procstat_freq_toc.htm
      1. The default PROC FREQ step generates a frequency report for each column in the table. 
      2. The TABLE or TABLES statement with one or more columns listed with spaces inbetween   
         generates a separate frequency table for each column.                               
@@ -28,5 +28,3 @@ proc freq data=sashelp.cars;
     tables type*origin;         /*3*/
 run;
 title;
-
-/* END */
