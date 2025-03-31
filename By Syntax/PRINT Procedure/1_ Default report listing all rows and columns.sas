@@ -13,5 +13,3 @@ title "Listing of SASHELP.CLASS";
 proc print data=sashelp.class;   /*1*/
 run;
 title;
-
-/* END */
