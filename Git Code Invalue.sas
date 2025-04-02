@@ -3,7 +3,7 @@
      This program creates an informat to read in or convert data with an input statement or function.                                                                         
      Keywords: PROC FORMAT, informat, invalue statement                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
-     Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/proc/p1xidhqypi0fnwn1if8opjpqpbmn.htm
+     Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
      1. The invalue statement creates an informat that can be used to read in data. In this example we want to read data
         that could be either a number or a character string.  
      2. In the data step we will use the informat to read in all the values as numbers. We will read the values a second time

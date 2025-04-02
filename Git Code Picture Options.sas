@@ -3,7 +3,7 @@
      This program creates an format to display numeric data.                                                                         
      Keywords: PROC FORMAT, format, picture statement                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
-     Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/proc/p1xidhqypi0fnwn1if8opjpqpbmn.htm
+     Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
      1. The picture statement creates an template for a numeric format that can be used to display data. In this 
         example we want to display the data using fill and prefix= options. The template is defined using 0s and 9s where
         the 9 represents a digit that must be displayed while 0 represents a digit that is displayed if it exists.

@@ -3,7 +3,7 @@
      This program creates a format to display data or to use with a put statement or function.                                                                         
      Keywords: PROC FORMAT, format, value statement                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
-     Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/proc/p1xidhqypi0fnwn1if8opjpqpbmn.htm
+     Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
      1. The value statement creates a format that can be used to display data. We start by using PROC FORMAT with the 
         value statement to create two new formats. 
      2. We'll add the default= option to specify the length of the label. 
