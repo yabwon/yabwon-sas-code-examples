@@ -59,6 +59,8 @@ quit;
     e. After reading the last observation, DO these steps:
     f. The SYMPUTX call routine removes leading and trailing blanks from the value before storing
        it in the specified macro variable. 
+    g. The %SYMDEL statement deletes the named macro variable(s) from the 
+       macro symbol table. 
 ************************************************************************************************/
 data _null_;
    retain minPrice maxPrice;                                       /*a*/
