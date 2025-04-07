@@ -17,6 +17,4 @@ proc print data=sashelp.class noobs label;   /*1*/
     label Name="First Name"                  /*3*/
           Height="Height (in)";
 run;
-title; 
-
-/*END*/
+title;
