@@ -4,7 +4,7 @@
      for a SELECT col1, col2, ... clause
      Keywords: PROC SQL                                                      
      SAS Versions: SAS 9, SAS Viya                                                            
-     Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.5&docsetId=sqlproc&docsetTarget=n0a693shdq473qn1svlwshfci9rg.htm#p134acmdl6qc9ln10ightascplv3
+     Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=sqlproc&docsetTarget=n0a693shdq473qn1svlwshfci9rg.htm#p134acmdl6qc9ln10ightascplv3
      1. The FEEDBACK will return qualified column names
      2. The NOEXCEC will not execute the SELECT statement, but you still get the feedback
      3. Use an alias to get shorter names
