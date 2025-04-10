@@ -1,19 +1,19 @@
 ﻿/************************************************************************************************
  USING DIGIT SELECTORS IN THE PICTURE STATEMENT                                                                                   
      This program uses options to customize formats that display numeric data.                                                                         
-     Keywords: PROC FORMAT, format, picture statement                                                               
+     Keywords: PROC FORMAT, FORMAT, PICTURE                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
      1. The picture statement creates an template for a numeric format that can be used to display data. The template 
         is defined using 0s and 9s where the 9 represents a digit that must be displayed while 0 represents a digit 
         that is displayed if it exists.
-     2. We use the LOW and HIGH keywords to indicate that any non-missing value should be displayed.
+     2. Use the LOW and HIGH keywords to indicate that any non-missing value should be displayed.
      3. For Nonzero-digit selectors, values are printed with leading zeros. For Zero digit selectors only those positions
-        that have values are printed. For example if my number is 123 and my format specifies 0009, the value will be
-        printed as 123 but if I use a nonzero selector - 9999 - it will be printed as 0123.
+        that have values are printed. For example if the number is 123 and the format specifies 0009, the value will be
+        printed as 123 but if there is a nonzero selector - 9999 - it will be printed as 0123.
      4. The noedit option specifies that numbers are not digit selectors, but messaging characters. Trailing characters are 
         not part of the template and are displayed as entered. 
-     5. In the PROC REPORT we compare the results for using the format vs not using it.
+     5. In the PROC REPORT compare the results for using the format vs not using it.
 ************************************************************************************************/
 data delay;
    infile datalines;
