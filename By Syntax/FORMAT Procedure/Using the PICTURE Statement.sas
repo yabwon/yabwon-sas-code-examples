@@ -18,26 +18,26 @@
 ************************************************************************************************/
 
 proc format;
-   picture thous /*1*/
-      low -<1000=009 /*2*/
-	  1000 - high = 009K (mult=.001) /*3*/
+   picture thous                                        /*1*/
+      low -<1000=009                                    /*2*/
+	  1000 - high = 009K (mult=.001)                     /*3*/
    ;
 run;
  
-title 'Data Displayed using a Custom Format';/*4*/
+title 'Data Displayed using a Custom Format';           /*4*/
 proc report data=sashelp.cars(obs=25) nowd;
    columns Make Model Type MSRP MSRP=MSRPForm;
    define MSRPForm / format = thous. 'Formatted MSRP';
 run;
 
 proc format;
-   picture thousr (round) /*5*/
+   picture thousr (round)                               /*5*/
       low -<1000=009 
 	  1000 - high = 009K (mult=.001) 
    ;
 run;
  
-title 'Data Displayed using a Custom Format';/*6*/
+title 'Data Displayed using a Custom Format';           /*6*/
 proc report data=sashelp.cars(obs=25) nowd;
    columns Make Model Type MSRP MSRP=MSRPForm MSRP=MSRPRound;
    define MSRPForm / format = thous. 'Formatted without rounding';

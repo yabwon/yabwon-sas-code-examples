@@ -12,15 +12,15 @@
      4. In the PROC PRINT apply the format and see the results.
 ************************************************************************************************/
 
-proc format;/*1*/
+proc format;                              /*1*/
    value $gen 'F' = 'Female'
-              'M' = 'Male';/*2*/
+              'M' = 'Male';               /*2*/
    value ht   low-<57 = 'Below Average'
               57-<67  = 'Average'
-              67-high  = 'Above Average';/*3*/
+              67-high  = 'Above Average'; /*3*/
 run;
 title "Listing of SASHELP.CLASS";
 title2 "With FORMATS Applied for sex and height";
 proc print data=sashelp.class noobs;   
-    format sex $gen. height ht.;   /*4*/
+    format sex $gen. height ht.;          /*4*/
 run;

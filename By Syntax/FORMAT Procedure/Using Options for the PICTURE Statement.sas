@@ -17,19 +17,20 @@
 ************************************************************************************************/
 
 proc format;
-   picture fill /*1*/
-      low - high = '000,000,009' /*2*/ (fill='0') /*3*/
+   picture fill                                /*1*/
+      low - high = '000,000,009'               /*2*/ 
+      (fill='0')                               /*3*/
    ;
 run;
  
 proc format;
-   picture pref /*1*/
-      low - high = '000,000,009' (prefix='$') /*4*/
+   picture pref 
+      low - high = '000,000,009' (prefix='$')  /*4*/
    ;
 run;
 
 title 'Data Displayed using a Custom Format';
-proc report data=sashelp.cars nowd; /*5*/
+proc report data=sashelp.cars nowd;            /*5*/
    columns Make Model Type MSRP MSRP=MSRPForm;
    define MSRP / format=pref. 'Using Prefix';
    define MSRPForm / format = fill. 'Using Fill';

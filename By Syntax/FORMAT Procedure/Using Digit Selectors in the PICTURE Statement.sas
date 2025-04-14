@@ -42,13 +42,13 @@ data delay;
 ;
 run;
 
-proc format;/*1*/                                         
+proc format;                                               /*1*/                                         
    picture delGrp 
-      low-< 0 = 'Early Arrival' /*2*/
+      low-< 0 = 'Early Arrival'                            /*2*/
             0 = 'No Delay' 
             1 = '1 Minute Delay'
-      1 <- 10 = '09 Minutes Delay' /*3*/
-      10<-high= ' Delay Greater than 10 Minutes' (noedit);/*4*/
+      1 <- 10 = '09 Minutes Delay'                         /*3*/
+      10<-high= ' Delay Greater than 10 Minutes' (noedit); /*4*/
    picture delGx 
       low-< 0 = 'Early Arrival' 
             0 = 'No Delay' 
@@ -63,7 +63,7 @@ proc format;/*1*/
       10<-high= ' Delay Greater than 10 Minutes';
 run;
 
-proc report data=delay nowd; /*5*/
+proc report data=delay nowd;                               /*5*/
    column delay delay=del delay=dx delay=dely;
    define dely / display format=comma12. 'Comma format';
    define delay / display format=delgrp. 'NOEDIT with 09';

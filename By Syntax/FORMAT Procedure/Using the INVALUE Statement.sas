@@ -11,17 +11,17 @@
      3. In the PROC PRINT and the PROC MEANS view the results of using the informat.
 ************************************************************************************************/
 
-proc format;
+proc format;                                                /*1*/
    invalue eval 
       'Excellent'=4
            'Good'=3
            'Fair'=2
            'Poor'=1
-   ;/*1*/
+   ;                            
 run;
  
 data evals;
-   input EmployeeId $ @6 Evaluation eval. @6 String $9.;/*2*/
+   input EmployeeId $ @6 Evaluation eval. @6 String $9.;    /*2*/
 datalines;
 2355 Good     
 5889 2        
@@ -33,7 +33,7 @@ datalines;
 7385 Good     
 ;
 run;
-title 'Data Read using a Custom Informat';/*3*/
+title 'Data Read using a Custom Informat';                  /*3*/
 proc print data=evals;
 run;
 proc means data=evals;
