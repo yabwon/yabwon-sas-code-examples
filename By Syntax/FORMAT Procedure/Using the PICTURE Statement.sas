@@ -1,19 +1,19 @@
-﻿/************************************************************************************************
+/************************************************************************************************
  USING THE PICTURE STATEMENT                                                                                   
      This program creates an format to display numeric data.                                                                         
      Keywords: PROC FORMAT, FORMAT, PICTURE                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
-     1. The picture statement creates a template for a numeric format that can be used to diaplay data. In this 
-        example display the data using K to represent thousands. The template is defined using 0s and 9s where
-        the 9 represents a digit that must be displayed while 0 represents a digit that is displayed if it exists.
-     2. Use the LOW and HIGH keywords to indicate that any non-missing value up to 1,000 should be displayed as is,
+     1. The PICTURE statement creates a template for a numeric format that can be used to diaplay data. In this 
+        example, display the data using K to represent thousands. The template is defined using 0s and 9s where
+        9 represents a digit that must be displayed while 0 represents a digit that is displayed if it exists.
+     2. Use the LOW and HIGH keywords to indicate that any non-missing value up to 1,000 should be displayed as-is,
         while values above 1,000 should be displayed in thousands with the K.
-     3. Trailing characters, not part of the template, like the K are displayed as entered. The mult= option shows how the
-        number must be multiplied to display correctly.
-     4. In the PROC REPORT compare the results for using the format vs not using it.
-     5. In the next PROC FORMAT create the thousr format using the round option so that the values will be rounded
-        rather than truncated.
+     3. Trailing characters, not part of the template, like the K are displayed as entered. 
+        The MULT= option shows how the number must be multiplied to display correctly.
+     4. PROC REPORT compares the results using the format vs not using it.
+     5. The next PROC FORMAT creates the THOUSR format using the ROUND option so that the values 
+        will be rounded rather than truncated.
      6. Use PROC REPORT to show the results of rounding vs truncating. 
 ************************************************************************************************/
 

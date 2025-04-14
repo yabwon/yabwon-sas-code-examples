@@ -1,4 +1,4 @@
-﻿/************************************************************************************************
+/************************************************************************************************
  OPTIONS FOR THE VALUE STATEMENT                                                                                   
      This program creates a format to display data or to use with a put statement or function.                                                                         
      Keywords: PROC FORMAT, FORMAT, VALUE                                                               
@@ -23,7 +23,8 @@ proc format;                                       /*1*/
 run;
 
 title "Listing of SASHELP.CLASS";
-title2 "With the DEFAULT= Option for sex set to 1";
+title2 "DEFAULT=1 Option Set for $GEN. Format Applied to Sex Column";
+title3 "FUZZ=1 Option Set for HT. Format Applied to Height Column";
 proc print data=sashelp.class noobs;   
     format sex $gen. height ht.;                   
 run;
@@ -38,7 +39,7 @@ proc format;                                       /*4*/
 run;
 
 title "Listing of SASHELP.CLASS";
-title2 "Showing the grouping based on the formatted value of height";
+title2 "MULTILABEL Option Groups Values into Multiple Formatted Categories";
 proc means data=sashelp.class; 
     var weight; 
 	class height / mlf order=formatted;
