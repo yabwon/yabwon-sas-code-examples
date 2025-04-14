@@ -2,9 +2,12 @@ Syntax Keywords (upper case)
 DATA STEP
 FMTLIB
 FORMAT
+INFORMAT
+INVALUE
 JOIN
 MACRO
 MERGE
+PICTURE
 PROC CATALOG
 PROC DATASETS
 PROC EXPORT
@@ -15,9 +18,9 @@ PROC IMPORT
 PROC MEANS
 PROC PRINT
 PROC SORT
-PROC SQL
 PROC TRANSPOSE
 PROC UNIVARIATE
+VALUE
 
 
 Topic Keywords (lower case)
@@ -34,7 +37,3 @@ read data
 report
 debug
 remove duplicates
-
-
-
-
