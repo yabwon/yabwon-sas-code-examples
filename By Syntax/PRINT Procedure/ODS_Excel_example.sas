@@ -1,12 +1,12 @@
 /************************************************************************************************
- EXAMPLE - PRINT MULTIPLE TABLES TO ONE XLXS FILE USING ODS EXCEL
+ PRINT MULTIPLE TABLES TO ONE XLXS FILE USING ODS EXCEL
      This program illustrates how to use ODS EXCEL and PROC PRINT to create an XLSX file with one worksheet (Excel "tab") for each source table.
      Keywords: PROC PRINT, Excel, report                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation:
-          - https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/odsug/p09n5pw9ol0897n1qe04zeur27rv.htm
-          - https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/odsug/p14qidvs5xf7omn14ommvsuhvmzn.htm
-          - https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/proc/p10qiuo2yicr4qn17rav8kptnjpu.htm
+          - https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=odsug&docsetTarget=p09n5pw9ol0897n1qe04zeur27rv.htm
+          - https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=odsug&docsetTarget=p14qidvs5xf7omn14ommvsuhvmzn.htm
+          - https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p10qiuo2yicr4qn17rav8kptnjpu.htm
       1. Path to save Excel file to. Must be accessible by the SAS session. Include trailing slash appropriate for operating system. 
       2. The name of the output Excel file.
       3. The fileref, XLXPRT in this example, will be used to create the ODS Excel output.
