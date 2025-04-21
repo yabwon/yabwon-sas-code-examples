@@ -1,28 +1,27 @@
 /************************************************************************************************
  USING DATE DIRECTIVES ON THE PICTURE STATEMENT                                                                                   
      This program creates formats to display dates in a customized way.                                                                         
-     Keywords: PROC FORMAT, FORMAT, PICTURE, DATATYPE=                                                               
+     Keywords: PROC FORMAT, FORMAT, PICTURE, DATATYPE                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
-     1. The picture statement can create formats that can be used to display dates. Start by using PROC FORMAT with a PICTURE
-        statement that has a datatype= option. 
-     2. The picture statement identifies the name of the new format. It then specifies the range of values to which a template 
+     1. The PICTURE statement can create formats that can be used to display dates. Start by using PROC FORMAT with a PICTURE
+        statement that has a DATATYPE= option. 
+     2. The PICTURE statement identifies the name of the new format. It then specifies the range of values to which a template 
         will be applied. Use the LOW and HIGH to keywords to indicate that the range includes everything from the lowest value 
         to the highest.
-     3. It then specifies a template or pattern for the format. In this case we use date directives to define the template. In
-        quotes this template includes three date directives - %0d specifies that the day of the month be written out in one or two 
+     3. The template or pattern for the format is specified. In this case we use date directives to define the template. The quoted
+        template includes three date directives - %0d specifies that the day of the month be written out in one or two 
         digits, %b specifies that the month be written out in a three letter abbreviation, and %Y specifies that a 4-digit
-        year be written out. These elements are separated by the tilde character (~). The pattern closes with spaces to account for
+        year be written out. These elements are separated by the tilde character (~). The pattern closes with extra spaces to account for
         the length of labels.
-     4. Next, in parentheses, the datatype is specified. The datatype= option can specify that the format is for a date, 
-        a time, or a datetime.  
-     5. In the PROC PRINT apply the format and see the results.
-     6. Text can be combined with picture templates to create truly customized formats. Text be can be used  for some levels of a 
+     4. The DATATYPE= option specifies that the format is a date, a time, or a datetime.  
+     5. Apply the format in PROC PRINT to view the results.
+     6. Text can be combined with picture templates to create truly customized formats. Text be can be used for some levels of a 
         format and date directives for other levels. 
      7. SAS date constants (as well as time constants and datetime constants) can be used to specify the beginning and end of
         a date range.
-     8. In using date directives remember that case can matter. A lower case b results in a 3-letter abbreviation for month, while 
-        an upper case B spells out the whole month.
+     8. When using date directives, remember that case can matter. A lower case 'b' results in a 3-letter abbreviation for month, while 
+        an upper case 'B' spells out the whole month.
 ************************************************************************************************/
 
 proc format;
