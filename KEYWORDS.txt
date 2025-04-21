@@ -20,6 +20,7 @@ PROC PRINT
 PROC SORT
 PROC TRANSPOSE
 PROC UNIVARIATE
+SELECT
 VALUE
 
 
@@ -27,6 +28,8 @@ Topic Keywords (lower case)
 aggregate
 csv
 custom format
+calculated columns
+debug
 delimited data
 Excel
 frequency
@@ -34,6 +37,5 @@ graph
 import data
 plot
 read data
-report
-debug
 remove duplicates
+report
