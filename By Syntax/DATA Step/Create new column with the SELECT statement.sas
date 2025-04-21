@@ -1,9 +1,9 @@
 /************************************************************************************************
  CREATE NEW COLUMN WITH THE SELECT STATEMENT
      This program illustrates how to use the SELECT statement in a DATA step to assign values to a 
-     given variable based on values of another variable or expression. This is an alternative to 
-     IF/THEN/ELSE syntax and may be preferred, especially when assigning many values. SELECT is 
-     similar to a CASE expression in a PROC SQL query.
+         given variable based on values of another variable or expression. This is an alternative to 
+         IF/THEN/ELSE syntax and may be preferred, especially when assigning many values. SELECT is 
+         similar to a CASE expression in a PROC SQL query.
      Keywords: DATA STEP, SELECT, calculated columns
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=lestmtsref&docsetTarget=p09213s9jc2t99n1vx0omk2rh9ps.htm
