@@ -16,7 +16,7 @@
       6. Use OTHERWISE to assign a missing value to ORIGIN_COUNTRY for cases when the value of MAKE is not specified in
 	     the SELECT statement.
       7. END specifies the end of the SELECT values.
-	  8. RENAME the ORIGIN variable to ORIGIN_REGION for clarity between the 2 ORIGIN variables in the resulting dataset.
+      8. RENAME the ORIGIN variable to ORIGIN_REGION for clarity between the 2 ORIGIN variables in the resulting dataset.
       9. An alternate approach allows multiple values listed inside the parentheses, separated by commas. 
 ************************************************************************************************/
 
