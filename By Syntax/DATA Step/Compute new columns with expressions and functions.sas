@@ -1,7 +1,7 @@
 /************************************************************************************************
  COMPUTE NEW COLUMNS WITH EXPRESSIONS AND FUNCTIONS                                           
      This program uses the DATA step to create a new table with selected rows and columns,    
-     new computed columns, and formatted values.                                          
+         new computed columns, and formatted values.                                          
      Keywords: DATA STEP, calculated columns                                                 
      SAS Versions: SAS 9, SAS Viya                                                            
      Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/default/lestmtsref/p1hglxgj1sjhdzn18soqrqmvogvj.htm
