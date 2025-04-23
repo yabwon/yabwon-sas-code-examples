@@ -54,24 +54,20 @@ proc format;
     5001-7500 = "Heavyweight Vehicles"
     7501-high = "Super Heavy-Duty Vehicles"
     ;
-
 run;
 
 
 data cars_formatted;                            /*2*/
     set sashelp.cars;
     keep Model MSRP EngineSize MPG_Highway Weight Cylinders;
-    format  Cylinders cyl. EngineSize esize. MPG_Highway mpg. MSRP msrp. Weight weight.;
- 
+    format Cylinders cyl. EngineSize esize. MPG_Highway mpg. MSRP msrp. Weight weight.;
 run;
 
 
 proc catalog cat=work.formats;                  /*3*/
     contents;
-
 run;
 
 
 proc format lib=work fmtlib;                    /*4*/     
-
 run;
