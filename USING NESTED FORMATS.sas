@@ -1,6 +1,6 @@
 /************************************************************************************************
  USING NESTED FORMATS                                                                                   
-     This program creates a format based other formats for different ranges of data.                                                                         
+     This program creates a format based on other formats for different ranges of data.                                                                         
      Keywords: PROC FORMAT, FORMAT, VALUE                                                               
      SAS Versions: SAS 9, SAS Viya                                                    
      Documentation: https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=default&docsetId=proc&docsetTarget=p1xidhqypi0fnwn1if8opjpqpbmn.htm
