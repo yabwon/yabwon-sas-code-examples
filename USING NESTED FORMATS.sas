@@ -8,7 +8,7 @@
      2. Use PROC FORMAT with a value statement. This identifies the name of the new format. Provide ranges for which you
         want to assign different formats. 
      3. To nest formats use square brackets to identify the format to be applied to each range.
-     4. In the PROC PRINT apply the format and see the results.
+     4. In the PROC PRINT apply the format to see the results.
 ************************************************************************************************/
 data payroll; /*1*/
    infile cards;
