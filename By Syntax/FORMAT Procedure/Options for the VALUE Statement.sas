@@ -1,4 +1,4 @@
-﻿/************************************************************************************************
+/************************************************************************************************
  OPTIONS FOR THE VALUE STATEMENT                                                                                   
      This program creates a format to display data or to use with a put statement or function.                                                                         
      Keywords: PROC FORMAT, FORMAT, VALUE                                                               
@@ -14,33 +14,34 @@
      5. In the PROC MEANS use the mlf option with the order=option to generate statistics using both ranges.
 ************************************************************************************************/
 
-proc format;/*1*/
+proc format;                                       /*1*/
    value $gen (default=1) 'F' = 'Female'
-              'M' = 'Male';/*2*/
+              'M' = 'Male';                        /*2*/
    value ht   (fuzz=1) low-57 = 'Below Average'
               57-67  = 'Average'
-              67-high  = 'Above Average';/*3*/
+              67-high  = 'Above Average';          /*3*/
 run;
 
 title "Listing of SASHELP.CLASS";
-title2 "With the DEFAULT= Option for sex set to 1";
+title2 "DEFAULT=1 Option Set for $GEN. Format Applied to Sex Column";
+title3 "FUZZ=1 Option Set for HT. Format Applied to Height Column";
 proc print data=sashelp.class noobs;   
-    format sex $gen. height ht.;   /*4*/
+    format sex $gen. height ht.;                   
 run;
 
-proc format;
-   value height (multilabel) /*4*/
+proc format;                                       /*4*/
+   value height (multilabel)               
               low-57 = '1 Below Average'
               57-<67  = '2 Average'
-              67-high  = '3 Above Average'/*3*/ 
+              67-high  = '3 Above Average'
               low-65 = 'Shorter'
-              65<-high  = 'Taller';/*3*/
+              65<-high  = 'Taller';
 run;
 
 title "Listing of SASHELP.CLASS";
-title2 "Showing the grouping based on the formatted value of height";
+title2 "MULTILABEL Option Groups Values into Multiple Formatted Categories";
 proc means data=sashelp.class; 
     var weight; 
 	class height / mlf order=formatted;
-    format height height.;   /*5*/
+    format height height.;                         /*5*/
 run;
