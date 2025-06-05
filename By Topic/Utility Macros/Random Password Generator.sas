@@ -2,7 +2,7 @@
  RANDOM PASSWORD GENERATION
     A macro program that generates a random password based on a list of allowed characters.
     Keywords: Macro
-	SAS Versions: SAS 9, SAS Viya
+    SAS Versions: SAS 9, SAS Viya
     Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/default/mcrolref/titlepage.htm
     1. Define keyword arguments control the length and characters used in the password.
     2. Build a macro variable containing all allowed characters.
@@ -10,19 +10,18 @@
     4. ...and append them to the growing password.
     5. Test macro via a simple loop and various settings.
     6. Use a random password for an encryption key on a tempoarary dataset.
-    NOTE: Does not (currently) support unmatched single or double quote characters
-	   in the special characterw string. Mismatched left or right parentheses have not been 
-       tested either.
+NOTE: Does not (currently) support unmatched single or double quote characters in the special 
+      characterw string. Mismatched left or right parentheses have not been tested either.
 ************************************************************************************************/
 
 /************************************************************************************************
  1. Define keyword arguments control the length and characters
     used in the password.
     a. len= is the desired length of the password, defaulting to 24
-	b. digits= is a Boolean flag, defaulting to TRUE. When TRUE (non-zero),
-	   digits 0-9 are available for use in the password.
-	c. special= is a set of special characters to also use in passwords. Defaults
-	   to those shown in the %NRSTR(). Use special= to not have any specials.
+    b. digits= is a Boolean flag, defaulting to TRUE. When TRUE (non-zero),
+       digits 0-9 are available for use in the password.
+    c. special= is a set of special characters to also use in passwords. Defaults
+       to those shown in the %NRSTR(). Use special= to not have any specials.
 ************************************************************************************************/
 
 %MACRO RANDPASS(len=24,digits=1,special=%NRSTR(@%&#!?.-_+*,/;:));
@@ -35,10 +34,10 @@
 /************************************************************************************************
  2. Build a macro variable containing all allowed characters.
     a. Add the lowercase letters.
-	b. Add uppercase characters via %UPCASE().
-	c. Add digits, if requested.
-	d. Add special characters. Note the use of %SUPERQ() to avoid issues
-	   with &s and %s that may be present in the string.
+    b. Add uppercase characters via %UPCASE().
+    c. Add digits, if requested.
+    d. Add special characters. Note the use of %SUPERQ() to avoid issues
+       with &s and %s that may be present in the string.
 ************************************************************************************************/
 
 %LET chars=abcdefghijklmnopqrstuvwxyz;
@@ -88,10 +87,10 @@
 /************************************************************************************************
  5. Test macro via a simple loop and various settings.
     a. We need to define a macro for this. Macro now allows %IF statements in
-	   "open code", but not loops.
-	b. Just two cases here. All-defaults, plus longer-no-digits-no-specials.
-	c. The "test" just prints them to the log, for eyeballing.
-	d. Then we run the loop 3 times to get an idea as to what it's doing.
+       "open code", but not loops.
+    b. Just two cases here. All-defaults, plus longer-no-digits-no-specials.
+    c. The "test" just prints them to the log, for eyeballing.
+    d. Then we run the loop 3 times to get an idea as to what it's doing.
 ************************************************************************************************/
 
 %MACRO TEST(n);
@@ -106,13 +105,13 @@
 /************************************************************************************************
  6. Use a random password for an encryption key on a tempoarary dataset.
     a. Generate a longish (60 characters) password, safe from prying eyes.
-	b. Import a list of NSA recruits from a secret location no one has
-	   ever heard of, and protect it with AES encryption with our generated
-	   password.
-	c. Now we can run analytics on it safely. Run PROC MEANS, and
-	   then ponder why the recruits are all teenagers.
-	d. Drop the table (I used PROC SQL), knowing that even if the
-	   data was recovered from the disk, the encryption renders it unreadable.
+    b. Import a list of NSA recruits from a secret location no one has
+       ever heard of, and protect it with AES encryption with our generated
+       password.
+    c. Now we can run analytics on it safely. Run PROC MEANS, and
+       then ponder why the recruits are all teenagers.
+    d. Drop the table (I used PROC SQL), knowing that even if the
+       data was recovered from the disk, the encryption renders it unreadable.
 ************************************************************************************************/
 
 %LET pw=%randpass(len=60);
