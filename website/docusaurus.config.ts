@@ -5,7 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
   title: "sas-code-examples Documentation",
-  favicon: "images/<your logo>.png",
+  favicon: "images/sas.png",
 
   // Set the production url of your site here
   url: "https://sassoftware.github.io",
@@ -57,7 +57,7 @@ const config: Config = {
       title: "sas-code-examples Documentation",
       logo: {
         alt: "SAS",
-        src: "images/<your logo>.png",
+        src: "images/sas.png",
       },
       items: [
         {
