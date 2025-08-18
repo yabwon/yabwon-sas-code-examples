@@ -1,7 +1,0 @@
-teams:
-  - name: all
-    role: Read
-  - name: ospo-contributors
-    role: Write
-  - name: ospo-maintainers
-    role: Maintain
