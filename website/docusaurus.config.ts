@@ -4,19 +4,19 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-  title: "<projectName> Documentation",
+  title: "sas-code-examples Documentation",
   favicon: "images/<your logo>.png",
 
   // Set the production url of your site here
   url: "https://sassoftware.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/<projectName>/",
+  // For GitHub pages deployment, it is often '/sas-code-examples/'
+  baseUrl: "/sas-code-examples/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "sassoftware", // Usually your GitHub org/user name.
-  projectName: "<projectName>", // Usually your repo name.
+  projectName: "sas-code-examples", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
@@ -37,7 +37,7 @@ const config: Config = {
           routeBasePath: "/",
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/sassoftware/<projectName>/tree/main/website/",
+            "https://github.com/sassoftware/sas-code-examples/tree/main/website/",
         },
         blog: false,
         theme: {
@@ -54,14 +54,14 @@ const config: Config = {
       },
     },
     navbar: {
-      title: "<projectName> Documentation",
+      title: "sas-code-examples Documentation",
       logo: {
         alt: "SAS",
         src: "images/<your logo>.png",
       },
       items: [
         {
-          href: "https://github.com/sassoftware/<projectName>",
+          href: "https://github.com/sassoftware/sas-code-examples",
           className: "header-github-link",
           title: "GitHub repository",
           position: "right",
@@ -76,7 +76,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub Repository",
-              href: "https://github.com/sassoftware/<projectName>",
+              href: "https://github.com/sassoftware/sas-code-examples",
             },
           ],
         },
