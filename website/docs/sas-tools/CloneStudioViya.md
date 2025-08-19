@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Using the Repo with SAS Studio on SAS Viya
 ## Create a forked copy of sas-code-examples
 1.	If you do not have a profile in GitHub associated with your SAS email account, visit `https://github.com/signup`. Create an account with your SAS email and a username of your choice. 
