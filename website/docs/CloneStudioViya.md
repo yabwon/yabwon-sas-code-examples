@@ -23,8 +23,13 @@ You can create a Git profile in SAS Studio using SSH keys or HTTPS. See [Working
 3.	Select <img width="12" height="14" alt="GitRepository" src="https://github.com/user-attachments/assets/0fec2580-827d-475d-87dc-23ec269d124f" /> (**Git Repositories**) and double-click `sas-code-examples` to open the repository in a tab. Any programs that have been modified or created will be listed in the _Unstaged Changes_ list. Select one or more programs from the list and use the down arrow icons to move them to the _Staged Changes_.
 4.	View the program on the right to examine highlighted portions of the code that have been added or removed. 
 5.	Type a message in the **Commit Comment** box that describes the modifications made to the program(s), then click **Commit**.
-> [!NOTE]
-> It is a good practice to stage one program at a time to provide an appropriate comment for the new commit. Only commit multiple programs at once if a single comment applies to all changes.
+
+:::tip
+
+It is a good practice to stage one program at a time to provide an appropriate comment for the new commit. Only commit multiple programs at once if a single comment applies to all changes.
+
+:::
+
 6.	Click **Push Main** to push the commits to your personal remote repository in GitHub. 
 7.	Return to your forked copy of the repository on GitHub.com and refresh the page to verify the changes have been synced. 
 
@@ -33,8 +38,13 @@ At any point you can request to merge your personal repository changes with the 
 1.	Refresh the GitHub page for your personal forked repository. The following message indicates that you have updates in your branch that are not year in the public repository. <img width="758" height="100" alt="image" src="https://github.com/user-attachments/assets/15299b74-3db3-4283-a4e7-728ca899647f" />
 1.	Select **Contribute** > **Open pull request**.
 2.	You may provide a description to explain the changes made. Note that the person approving your request will be able to review all file changes to ensure all contribution rules are followed and that there are no conflicts with other updates.
-> [!IMPORTANT]
-> Your contribution must meet the project's contribution guidelines. See `CONTRIBUTING.md` for details. The last line in the PR description must be the following text: `Signed-off-by: Name <email.address>`
+
+:::warning
+
+Your contribution must meet the project's contribution guidelines. See `CONTRIBUTING.md` for details. The last line in the PR description must be the following text: `Signed-off-by: Name <email.address>`.
+
+:::
+
 3.	Click **Create pull request**. You will likely see the following message, which can be ignored: <img width="509" height="198" alt="image" src="https://github.com/user-attachments/assets/73d765b2-b15d-450f-97ef-d9223a2c97bd" />
 4.	The PR will go to the repository maintainers for approval. If there are issues with your requested changes, you may be asked in the comments of the PR to make further edits and recommit your file(s). 
 5.	Once all changes are approved, they will be merged into the main repository. You will see the following message in your PR: <img width="561" height="144" alt="image" src="https://github.com/user-attachments/assets/e41b8172-9397-49f4-8acd-7a090e32aefb" />
