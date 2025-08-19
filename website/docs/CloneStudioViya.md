@@ -32,7 +32,7 @@ At any point you can request to merge your personal repository changes with the 
 1.	Refresh the GitHub page for your personal forked repository. The following message indicates that you have updates in your branch that are not year in the public repository. <img width="758" height="100" alt="image" src="https://github.com/user-attachments/assets/15299b74-3db3-4283-a4e7-728ca899647f" />
 2.	Select **Contribute** > **Open pull request**.
 3.	You may provide a description to explain the changes made. Note that the person approving your request will be able to review all file changes to ensure all contribution rules are followed and that there are no conflicts with other updates.
-4.	**IMPORTANT**: The last line in the PR description must be the following text: _Signed-off-by: Name <email>_
+4.	**IMPORTANT**: Your contribution must meet the project's [contribution guidelines](../../CONTRIBUTING.md). The last line in the PR description must be the following text: `Signed-off-by: Name <email.address>`
 5.	Click **Create pull request**. You will likely see the following message, which can be ignored: <img width="509" height="198" alt="image" src="https://github.com/user-attachments/assets/73d765b2-b15d-450f-97ef-d9223a2c97bd" />
 6.	The PR will go to the repository maintainers for approval. If there are issues with your requested changes, you may be asked in the comments of the PR to make further edits and recommit your file(s). 
 7.	Once all changes are approved, they will be merged into the main repository. You will see the following message in your PR: <img width="561" height="144" alt="image" src="https://github.com/user-attachments/assets/e41b8172-9397-49f4-8acd-7a090e32aefb" />
