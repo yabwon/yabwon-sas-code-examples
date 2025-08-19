@@ -34,7 +34,7 @@ At any point you can request to merge your personal repository changes with the 
 1.	Select **Contribute** > **Open pull request**.
 2.	You may provide a description to explain the changes made. Note that the person approving your request will be able to review all file changes to ensure all contribution rules are followed and that there are no conflicts with other updates.
 > [!IMPORTANT]
-> Your contribution must meet the project's [contribution guidelines](../../CONTRIBUTING.md). The last line in the PR description must be the following text: `Signed-off-by: Name <email.address>`
+> Your contribution must meet the project's contribution guidelines. See `CONTRIBUTING.md` for details. The last line in the PR description must be the following text: `Signed-off-by: Name <email.address>`
 3.	Click **Create pull request**. You will likely see the following message, which can be ignored: <img width="509" height="198" alt="image" src="https://github.com/user-attachments/assets/73d765b2-b15d-450f-97ef-d9223a2c97bd" />
 4.	The PR will go to the repository maintainers for approval. If there are issues with your requested changes, you may be asked in the comments of the PR to make further edits and recommit your file(s). 
 5.	Once all changes are approved, they will be merged into the main repository. You will see the following message in your PR: <img width="561" height="144" alt="image" src="https://github.com/user-attachments/assets/e41b8172-9397-49f4-8acd-7a090e32aefb" />
