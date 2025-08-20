@@ -21,15 +21,14 @@ To view a demonstration of how to create and configure SSH keys with GitHub and 
 
 ## Clone the repository in SAS Studio
 1.	In your forked repository on GitHub.com, select the green **Code** button. On the **Local** tab, select **SSH**. Click <img width="12" height="14" alt="Copy (2)" src="https://github.com/user-attachments/assets/18939792-199e-4bf5-aaa9-7d888cee73fe" /> (**Copy**) to copy the repository reference.
-2.	Return to SAS Studio. IN the Git Repository pane, click **Clone a Repository**. Navigate to a location with write access, then right-click the folder and select **New folder**. Name the folder `sas-code-examples` and click **OK**.
-3.	Select <img width="12" height="14" alt="GitRepository" src="https://github.com/user-attachments/assets/521a9569-1a6f-48fc-b48e-7ac0ce1470d1" /> (**Git Repositories**) in the left pane and click **Clone**.
-4.	Paste the repository URL copied previously from GitHub. Next, click **Browse**. Create a new folder named `sas-code-examples` in a location of your choice. Select the new `sas-code-examples` folder and click **OK**. 
-5.	`sas-code-examples` is now listed in the **Git Repositories** pane, and a new tab opens. You can also double click the repository name in the left pane to open it. This is where you can view the staged and unstaged changes in your local repository and pull or push changes to the external Git repository.
+2.	Return to SAS Studio. In the Git Repository pane, click **Clone a Repository**.
+3.	Paste the repository URL copied previously from GitHub. Next, click **Browse**. Create a new folder named `sas-code-examples` in a location of your choice. Select the new `sas-code-examples` folder and click **OK**.
+4.	`sas-code-examples` is now listed in the **Git Repositories** pane, and a new tab opens. You can also double click the repository name in the left pane to open it. This is where you can view the staged and unstaged changes in your local repository and pull or push changes to the external Git repository.
 
 ## Create/modify programs and update personal repository
-1.	In SAS Studio, click <img width="12" height="14" alt="Server" src="https://github.com/user-attachments/assets/2372856a-165c-48c6-90d0-b96c069c1c48" /> in the left pane to open the **Explorer** or **SAS Server**. Navigate to `sas-code-examples` folder where you cloned your personal forked version of the repository. 
+1.	In SAS Studio, expand Files and Folders. Navigate to the `sas-code-examples` folder where you cloned your personal forked version of the repository. 
 2.	You can open existing programs, make modifications, and save changes – just as you would any other local files. You can also add new programs. Any changes you make are saved only in your local repository. 
-3.	Select <img width="12" height="14" alt="GitRepository" src="https://github.com/user-attachments/assets/0fec2580-827d-475d-87dc-23ec269d124f" /> (**Git Repositories**) and double-click `sas-code-examples` to open the repository in a tab. Any programs that have been modified or created will be listed in the _Unstaged Changes_ list. Select one or more programs from the list and use the down arrow icons to move them to the _Staged Changes_.
+3.	Select **Git Repositories** and double-click `sas-code-examples` to open the repository in a tab. Any programs that have been modified or created will be listed in the _Unstaged Changes_ list. Select one or more programs from the list and use the down arrow icons to move them to the _Staged Changes_.
 4.	View the program on the right to examine highlighted portions of the code that have been added or removed. 
 5.	Type a message in the **Commit Comment** box that describes the modifications made to the program(s), then click **Commit**.
 
