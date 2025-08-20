@@ -10,8 +10,8 @@ sidebar_position: 2
 5.	Confirm you are working in your branch, which is a personal copy of the repository.
 
 ## Create a Git Profile in SAS Studio
-1. Open SAS Studio. If you do not see Git Repository in the left pane, click (**More application options**) and select View > Git Repository. 
-2. From the Git Repository pane, click **Create a Profile**. 
+1. Open SAS Studio. If you do not see Git Repository in the left pane, click <img width="14" height="11" alt="More" src="https://github.com/user-attachments/assets/dcb4cea3-607f-4de7-b01b-d43f8b460565" /> (**More application options**) and select **View** > **Git Repository**. 
+2. From the **Git Repository** pane, click **Create a Profile**. 
 3. Provide a profile name of your choice. Enter the user name and email associated with your GitHub profile. Browse to select your public and private SSH keys for authentication. See [Creating a Git Profile](https://go.documentation.sas.com/doc/en/webeditorcdc/3.8/webeditorug/p1aoidfxzol1fgn15xobcl43caho.htm) for details. 
 :::tip
 
@@ -24,7 +24,7 @@ To view a demonstration of how to create and configure SSH keys with GitHub and 
 2.	Return to SAS Studio. IN the Git Repository pane, click **Clone a Repository**. Navigate to a location with write access, then right-click the folder and select **New folder**. Name the folder `sas-code-examples` and click **OK**.
 3.	Select <img width="12" height="14" alt="GitRepository" src="https://github.com/user-attachments/assets/521a9569-1a6f-48fc-b48e-7ac0ce1470d1" /> (**Git Repositories**) in the left pane and click **Clone**.
 4.	Paste the repository URL copied previously from GitHub. Next, click **Browse**. Create a new folder named `sas-code-examples` in a location of your choice. Select the new `sas-code-examples` folder and click **OK**. 
-5.	`sas-code-examples` is now listed in the Git Repositories pane, and a new tab opens. You can also double click the repository name in the left pane to open it. This is where you can view the staged and unstaged changes in your local repository and pull or push changes to the external Git repository.
+5.	`sas-code-examples` is now listed in the **Git Repositories** pane, and a new tab opens. You can also double click the repository name in the left pane to open it. This is where you can view the staged and unstaged changes in your local repository and pull or push changes to the external Git repository.
 
 ## Create/modify programs and update personal repository
 1.	In SAS Studio, click <img width="12" height="14" alt="Server" src="https://github.com/user-attachments/assets/2372856a-165c-48c6-90d0-b96c069c1c48" /> in the left pane to open the **Explorer** or **SAS Server**. Navigate to `sas-code-examples` folder where you cloned your personal forked version of the repository. 
