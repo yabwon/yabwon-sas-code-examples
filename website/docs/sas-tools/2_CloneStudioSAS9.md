@@ -41,7 +41,7 @@ It is a good practice to stage one program at a time to provide an appropriate c
 6.	Click **Push Main** to push the commits to your personal remote repository in GitHub. 
 7.	Return to your forked copy of the repository on GitHub.com and refresh the page to verify the changes have been synced. 
 
-## Merge changes into public repository 
+## Merge changes into main repository 
 At any point you can request to merge your personal repository changes with the official public repository. In GitHub, this is called a Pull Request (PR).
 1.	Refresh the GitHub page for your personal forked repository. The following message indicates that you have updates in your branch that are not year in the public repository. <img width="758" height="100" alt="image" src="https://github.com/user-attachments/assets/15299b74-3db3-4283-a4e7-728ca899647f" />
 1.	Select **Contribute** > **Open pull request**.
