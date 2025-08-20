@@ -1,4 +1,4 @@
 ---
 sidebar_position: 3
 ---
-# SAS Code Examples Repository
+# Code Examples by Syntax
